@@ -1,10 +1,9 @@
 name: dart_frog_html
 description: A package that helps make html for Dart Frog servers.
-version: 0.1.0+1
-publish_to: none
+version: 0.0.1
 
 environment:
-  sdk: ^3.5.0
+  sdk: ^3.0.0
 
 dependencies:
   dart_frog: ^1.2.1
