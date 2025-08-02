@@ -1,0 +1,30 @@
+import 'package:dart_frog/dart_frog.dart';
+import 'package:dart_frog_html/dart_frog_html.dart';
+import 'package:mocktail/mocktail.dart';
+import 'package:test/test.dart';
+
+class _MockRequestContext extends Mock implements RequestContext {}
+
+void main() {
+  group('Output', () {
+    late RequestContext mockContext;
+
+    setUp(() {
+      mockContext = _MockRequestContext();
+    });
+
+    test('generates correct HTML tag', () {
+      final element = Output();
+      final html = element.html(mockContext);
+      
+      expect(html, equals('<output></output>'));
+    });
+
+    test('generates correct HTML tag with children', () {
+      final element = Output(children: [Text('content')]);
+      final html = element.html(mockContext);
+      
+      expect(html, equals('<output>content</output>'));
+    });
+  });
+}
