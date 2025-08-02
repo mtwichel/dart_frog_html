@@ -14,6 +14,7 @@
   "useGitignore": true,
   "words": [
     "accesskey",
+    "carryforward",
     "Colgroup",
     "contenteditable",
     "contextmenu",
@@ -23,6 +24,7 @@
     "Figcaption",
     "Github",
     "Hgroup",
+    "noopener",
     "Noscript",
     "Optgroup",
     "rgba",
