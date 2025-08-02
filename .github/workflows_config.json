@@ -1,6 +1,6 @@
 {
   "exclude": "",
-  "minCoverage": 0,
+  "minCoverage": 100,
   "flutterVersion": "3.27.0",
   "flutterChannel": "stable",
   "dartChannel": "stable",

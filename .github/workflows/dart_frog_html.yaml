@@ -29,4 +29,4 @@ jobs:
     with:
       working_directory: .
       dart_sdk: stable
-      min_coverage: 0
+      min_coverage: 100
