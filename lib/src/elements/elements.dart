@@ -21,7 +21,7 @@ export 'col.dart';
 export 'colgroup.dart';
 export 'data.dart';
 export 'datalist.dart';
-export 'db.dart';
+export 'dd.dart';
 export 'del.dart';
 export 'details.dart';
 export 'dfn.dart';

@@ -6,7 +6,7 @@ import 'package:test/test.dart';
 class _MockRequestContext extends Mock implements RequestContext {}
 
 void main() {
-  group('Db', () {
+  group('Dd', () {
     late RequestContext mockContext;
 
     setUp(() {
@@ -14,17 +14,17 @@ void main() {
     });
 
     test('generates correct HTML tag', () {
-      final element = Db();
+      final element = Dd();
       final html = element.html(mockContext);
 
-      expect(html, equals('<db></db>'));
+      expect(html, equals('<dd></dd>'));
     });
 
     test('generates correct HTML tag with children', () {
-      final element = Db(children: [const Text('content')]);
+      final element = Dd(children: [const Text('content')]);
       final html = element.html(mockContext);
 
-      expect(html, equals('<db>content</db>'));
+      expect(html, equals('<dd>content</dd>'));
     });
   });
 }

@@ -1,7 +1,7 @@
 import 'package:dart_frog_html/dart_frog_html.dart';
 
-class Db extends HtmlElement {
-  Db({
+class Dd extends HtmlElement {
+  Dd({
     super.attributes,
     super.children,
     super.className,
