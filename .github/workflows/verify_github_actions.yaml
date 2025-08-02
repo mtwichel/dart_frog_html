@@ -25,7 +25,7 @@ jobs:
           cache: true
           cache-key: flutter-:os:-:channel:-:version:-:arch:-:hash:-$
           channel: stable
-          flutter-version: 3.24.4
+          flutter-version: 3.27.0
 
       - name: Install Mason
         run: dart pub global activate mason_cli
