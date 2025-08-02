@@ -16,14 +16,14 @@ void main() {
     test('generates correct HTML tag', () {
       final element = Textarea();
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<textarea></textarea>'));
     });
 
     test('generates correct HTML tag with children', () {
-      final element = Textarea(children: [Text('content')]);
+      final element = Textarea(children: [const Text('content')]);
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<textarea>content</textarea>'));
     });
   });

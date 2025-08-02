@@ -16,14 +16,14 @@ void main() {
     test('generates correct HTML tag', () {
       final element = Fieldset();
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<fieldset></fieldset>'));
     });
 
     test('generates correct HTML tag with children', () {
-      final element = Fieldset(children: [Text('content')]);
+      final element = Fieldset(children: [const Text('content')]);
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<fieldset>content</fieldset>'));
     });
   });

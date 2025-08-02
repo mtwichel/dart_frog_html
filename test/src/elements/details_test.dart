@@ -16,14 +16,14 @@ void main() {
     test('generates correct HTML tag', () {
       final element = Details();
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<details></details>'));
     });
 
     test('generates correct HTML tag with children', () {
-      final element = Details(children: [Text('content')]);
+      final element = Details(children: [const Text('content')]);
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<details>content</details>'));
     });
   });

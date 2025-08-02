@@ -16,14 +16,14 @@ void main() {
     test('generates correct HTML tag', () {
       final element = Bdo();
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<bdo></bdo>'));
     });
 
     test('generates correct HTML tag with children', () {
-      final element = Bdo(children: [Text('content')]);
+      final element = Bdo(children: [const Text('content')]);
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<bdo>content</bdo>'));
     });
   });

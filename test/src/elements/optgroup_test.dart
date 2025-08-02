@@ -16,14 +16,14 @@ void main() {
     test('generates correct HTML tag', () {
       final element = Optgroup();
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<optgroup></optgroup>'));
     });
 
     test('generates correct HTML tag with children', () {
-      final element = Optgroup(children: [Text('content')]);
+      final element = Optgroup(children: [const Text('content')]);
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<optgroup>content</optgroup>'));
     });
   });

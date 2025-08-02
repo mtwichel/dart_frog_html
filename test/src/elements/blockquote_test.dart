@@ -16,14 +16,14 @@ void main() {
     test('generates correct HTML tag', () {
       final element = Blockquote();
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<blockquote></blockquote>'));
     });
 
     test('generates correct HTML tag with children', () {
-      final element = Blockquote(children: [Text('content')]);
+      final element = Blockquote(children: [const Text('content')]);
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<blockquote>content</blockquote>'));
     });
   });

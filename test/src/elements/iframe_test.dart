@@ -16,14 +16,14 @@ void main() {
     test('generates correct HTML tag', () {
       final element = Iframe();
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<iframe></iframe>'));
     });
 
     test('generates correct HTML tag with children', () {
-      final element = Iframe(children: [Text('content')]);
+      final element = Iframe(children: [const Text('content')]);
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<iframe>content</iframe>'));
     });
   });

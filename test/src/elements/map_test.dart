@@ -14,16 +14,16 @@ void main() {
     });
 
     test('generates correct HTML tag', () {
-      final element = Map();
+      final element = MapElement();
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<map></map>'));
     });
 
     test('generates correct HTML tag with children', () {
-      final element = Map(children: [Text('content')]);
+      final element = MapElement(children: [const Text('content')]);
       final html = element.html(mockContext);
-      
+
       expect(html, equals('<map>content</map>'));
     });
   });
