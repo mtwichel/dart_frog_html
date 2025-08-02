@@ -8,7 +8,7 @@
 
 A type-safe, component-based HTML builder for **Dart Frog** applications. Build dynamic web pages with the power of Dart's type system and the simplicity of declarative UI patterns.
 
-**Learn more at [dartfrog.vgv.dev](https://dartfrog.vgv.dev)!**
+**Learn more at [dart-frog.dev](https://dart-frog.dev)!**
 
 ---
 
