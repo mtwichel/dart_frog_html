@@ -1,0 +1,16 @@
+{
+  "exclude": "",
+  "minCoverage": 0,
+  "flutterVersion": "3.27.0",
+  "flutterChannel": "stable",
+  "dartChannel": "stable",
+  "dependabotFrequency": "weekly",
+  "generateDependabot": true,
+  "generateSemanticPullRequest": true,
+  "generateSpellCheck": true,
+  "spellCheckConfig": "cspell.json",
+  "workflowRef": "main",
+  "clearOldWorkflows": false,
+  "mainJobName": "verify_and_test",
+  "licenseCheckJobName": "license_check"
+}
